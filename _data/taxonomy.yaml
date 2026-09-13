@@ -1,154 +1,55 @@
 categories:
   - positions
   - guard
-  - guard-passing
+  - passing
   - escapes
   - sweeps
   - submissions
   - takedowns
   - transitions
-  - guard-retention
   - concepts
-  - defense
-  - strategy
+  - training
+
+tags:
+  # Positions
+  - mount
+  - side-control
+  - back-control
+  - turtle
+  - half-guard
+  - closed-guard
+  - open-guard
+  - butterfly-guard
+
+  # Techniques
+  - armbar
+  - kimura
+  - americana
+  - triangle
+  - guillotine
+  - rear-naked-choke
+  - heel-hook
+  - ankle-lock
+
+  # Movement & fundamentals
+  - framing
+  - shrimp
+  - bridge
+  - hip-escape
+  - technical-stand-up
+  - underhook
+  - overhook
+  - grip-fighting
+
+  # Context
+  - gi
+  - no-gi
   - drilling
   - sparring
   - competition
 
-tags:
-
-  positions:
-    - mount
-    - side-control
-    - north-south
-    - knee-on-belly
-    - back-control
-    - turtle
-    - front-headlock
-
-  guards:
-    - closed-guard
-    - open-guard
-    - half-guard
-    - butterfly-guard
-    - de-la-riva
-    - reverse-de-la-riva
-    - spider-guard
-    - lasso-guard
-    - collar-sleeve
-    - x-guard
-    - single-leg-x
-    - 50-50
-    - deep-half
-    - knee-shield
-    - z-guard
-    - rubber-guard
-
-  passing:
-    - knee-cut
-    - toreando
-    - leg-drag
-    - long-step
-    - smash-pass
-    - over-under
-    - double-under
-    - body-lock
-    - stack-pass
-    - headquarters
-
-  escapes:
-    - mount-escape
-    - side-control-escape
-    - back-escape
-    - turtle-escape
-    - guard-recovery
-    - guard-retention
-    - submission-escape
-    - hip-escape
-    - shrimp
-    - bridge
-    - framing
-
-  submissions:
-    - rear-naked-choke
-    - guillotine
-    - triangle
-    - arm-triangle
-    - darce
-    - anaconda
-    - armbar
-    - kimura
-    - americana
-    - omoplata
-    - heel-hook
-    - ankle-lock
-    - kneebar
-    - toe-hold
-
-  wrestling:
-    - single-leg
-    - double-leg
-    - high-crotch
-    - ankle-pick
-    - snapdown
-    - body-lock
-    - arm-drag
-    - russian-tie
-    - underhook
-    - overhook
-    - whizzer
-    - collar-tie
-
-  movements:
-    - shrimp
-    - bridge
-    - technical-stand-up
-    - sit-through
-    - granby
-    - inversion
-    - hip-heist
-    - pummeling
-    - framing
-
-  concepts:
-    - posture
-    - base
-    - balance
-    - leverage
-    - frames
-    - wedges
-    - connection
-    - distance
-    - pressure
-    - alignment
-    - inside-position
-    - outside-position
-    - hip-control
-    - head-control
-    - timing
-    - angles
-    - off-balancing
-    - grips
-    - grip-fighting
-
-  training:
-    - drilling
-    - sparring
-    - positional-sparring
-    - coach-feedback
-    - mistake
-    - breakthrough
-    - problem
-    - solution
-    - refinement
-    - troubleshooting
-    - game-plan
-    - weak-point
-
-  rules:
-    - gi
-    - no-gi
-    - ibjjf
-    - submission-only
-    - points
-    - competition
+  # Learning
+  - mistake
+  - breakthrough
+  - coach-feedback
+  - needs-drilling
