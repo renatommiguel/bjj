@@ -1,0 +1,8 @@
+title: BJJ Journal
+description: Notes, lessons and techniques learned through Brazilian Jiu-Jitsu.
+author: Renato
+
+theme: minima
+
+plugins:
+  - jekyll-feed
