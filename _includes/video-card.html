@@ -1,0 +1,48 @@
+{%- comment -%}
+  Responsive video card. Use this for every video reference in a post —
+  never a bare link.
+
+  {% include video-card.html provider="youtube" id="qwUXweab9BI" title="Underhook Half Guard to Dogfight Sweep" source="Ross Nicholls — London Grapple" %}
+  {% include video-card.html provider="instagram" id="DcaPkNMpnwC" title="Dogfight reactions and roll-under sweep" source="Chris Triantopoulos" %}
+  {% include video-card.html provider="vimeo" id="123456789" title="..." source="..." %}
+
+  provider: youtube | instagram (reel shortcode) | vimeo | any (needs url=)
+  id:       the video id / shortcode, not the full URL
+  title:    what the video shows
+  source:   who made it (optional)
+{%- endcomment -%}
+
+{%- assign vc_provider = include.provider | default: "youtube" -%}
+{%- assign vc_title = include.title | default: "Video reference" -%}
+{%- assign vc_ratio = "56.25%" -%}
+{%- assign vc_max_width = "100%" -%}
+
+{%- if vc_provider == "youtube" -%}
+  {%- assign vc_embed = "https://www.youtube-nocookie.com/embed/" | append: include.id -%}
+  {%- assign vc_url = "https://www.youtube.com/watch?v=" | append: include.id -%}
+  {%- assign vc_label = "YouTube" -%}
+{%- elsif vc_provider == "instagram" -%}
+  {%- assign vc_embed = "https://www.instagram.com/reel/" | append: include.id | append: "/embed/" -%}
+  {%- assign vc_url = "https://www.instagram.com/reel/" | append: include.id | append: "/" -%}
+  {%- assign vc_ratio = "175%" -%}
+  {%- assign vc_max_width = "400px" -%}
+  {%- assign vc_label = "Instagram" -%}
+{%- elsif vc_provider == "vimeo" -%}
+  {%- assign vc_embed = "https://player.vimeo.com/video/" | append: include.id -%}
+  {%- assign vc_url = "https://vimeo.com/" | append: include.id -%}
+  {%- assign vc_label = "Vimeo" -%}
+{%- else -%}
+  {%- assign vc_embed = include.url -%}
+  {%- assign vc_url = include.url -%}
+  {%- assign vc_label = include.label | default: "Video" -%}
+{%- endif -%}
+
+<figure class="video-card" style="max-width:{{ vc_max_width }};margin:1.6rem auto;padding:0;background:#fff;border:1px solid #e3e6ea;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);">
+  <div style="position:relative;width:100%;height:0;padding-bottom:{{ vc_ratio }};background:#000;">
+    <iframe src="{{ vc_embed }}" title="{{ vc_title | escape }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+  </div>
+  <figcaption style="padding:.7rem .9rem;font-size:.9rem;line-height:1.45;color:#111;">
+    <strong>{{ vc_title | escape }}</strong>{% if include.source and include.source != "" %}<span style="color:#6a737d;"> — {{ include.source | escape }}</span>{% endif %}<br>
+    <a href="{{ vc_url }}" rel="noopener" style="font-size:.82rem;letter-spacing:.02em;text-transform:uppercase;">{{ vc_label }} ↗</a>
+  </figcaption>
+</figure>

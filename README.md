@@ -14,6 +14,8 @@ bjj/
 ├── _posts/
 ├── _templates/
 │   └── post-template.md
+├── _includes/
+│   └── video-card.html
 ├── _data/
 │   └── taxonomy.yml
 ├── assets/
@@ -228,6 +230,39 @@ Reference an image from a post using Markdown:
 ```
 
 Use descriptive filenames.
+
+---
+
+# Videos
+
+Videos are always embedded as **video cards**, never left as bare links.
+
+Use the `video-card.html` include. It renders a responsive card with a real
+player, the title, the author and a link to the original:
+
+```markdown
+{% include video-card.html provider="youtube" id="qwUXweab9BI" title="Underhook Half Guard to Dogfight Sweep" source="Ross Nicholls — London Grapple" %}
+```
+
+Supported providers:
+
+| provider    | `id`                                   | notes                                  |
+| ----------- | -------------------------------------- | -------------------------------------- |
+| `youtube`   | the part after `v=`                    | player is `youtube-nocookie.com`       |
+| `instagram` | the shortcode in `/reel/<shortcode>/`  | renders portrait, capped at 400px wide |
+| `vimeo`     | the number in the URL                  |                                        |
+
+For any other host, pass the embed URL directly:
+`provider="other" url="https://player.example.com/embed/xyz" label="Example"`.
+
+Rules:
+
+- Every video gets a card in a `## Video references` section, in the order it
+  matters to the lesson.
+- Give the card a `title` that says what the video shows, and a `source` with the
+  author or channel. Never paste the raw URL as the title.
+- Written articles and blog breakdowns are not videos: keep them in a plain
+  `## Written breakdowns` list below the cards.
 
 ---
 

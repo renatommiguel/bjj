@@ -50,8 +50,12 @@ These are best-effort matches from the description, not a definitive identificat
 
 ## Video references
 
-- Ross Nicholls — [Underhook Half Guard to Dogfight Sweep](https://www.youtube.com/watch?v=qwUXweab9BI)
+{% include video-card.html provider="youtube" id="qwUXweab9BI" title="Underhook Half Guard to Dogfight Sweep" source="Ross Nicholls — London Grapple" %}
+
+{% include video-card.html provider="instagram" id="DcaPkNMpnwC" title="Dogfight reactions and roll-under sweep" source="Chris Triantopoulos" %}
+
+## Written breakdowns
+
 - Lucas Leite — [Small Guy Half Guard Sweep From Dog Fight](https://bjjfanatics.com/blogs/news/small-guy-half-guard-sweep-from-dog-fight-by-lucas-leite)
 - [Basic Half Guard Sweeps — Half Guard Life](https://halfguardlife.com/basic-half-guard-sweeps/)
 - [2 Sweeps From The Dog Fight Position For BJJ](https://bjjfanatics.com/blogs/news/2-sweeps-from-the-dog-fight-position-for-bjj)
-- Instagram reel: [Chris Triantopoulos — dogfight reactions and roll-under sweep](https://www.instagram.com/reel/DcaPkNMpnwC/)
